@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+.light {
+  @apply bg-["#f4ece4"];
+}
+.dark {
+  @apply bg-["#202023"];
+}
