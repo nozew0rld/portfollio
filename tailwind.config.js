@@ -6,6 +6,18 @@ module.exports = {
       fontSize: {
         "10xl": ["10rem", { lineHeight: "1" }],
       },
+      fontWeight: {
+        thin: "100",
+        thiner: "150",
+        extralight: "200",
+        light: "300",
+        normal: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        extrabold: "800",
+        black: "900",
+      },
       spacing: {
         68: "17rem",
         76: "19rem",
@@ -36,8 +48,13 @@ module.exports = {
         mukta: ["Mukta"],
         mulish: ["Mulish"],
         opensans: ["Open Sans, sans-serif;"],
+        roboto: ["Roboto, sans-serif;"],
+        itim: ["Itim, cursive;"],
       },
       colors: {
+        beige: {
+          100: "#fad18d",
+        },
         red: {
           50: "#ffebee",
           100: "#ffcdd2",
@@ -262,6 +279,7 @@ module.exports = {
           50: "#fff8e1",
           100: "#ffecb3",
           200: "#ffe082",
+          250: "#fad18d",
           300: "#ffd54f",
           400: "#ffca28",
           500: "#ffc107",
