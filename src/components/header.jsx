@@ -1,28 +1,20 @@
-import React, { useState, Suspense } from "react";
+import { useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { IoIosPaw } from "react-icons/io";
 import { IoSunnyOutline } from "react-icons/io5";
-import { Box, OrbitControls } from "@react-three/drei";
-import { Canvas, useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-
-function Scene() {
-  const gltf = useLoader(GLTFLoader, "/dog.glb");
-  return (
-    <Suspense fallback={null}>
-      <primitive scale={0.5} object={gltf.scene} />
-    </Suspense>
-  );
-}
 
 function Header({ changeTheme, setChangeTheme }) {
   const [swith, setSwitch] = useState(false);
   return (
     <div className={`${changeTheme ? "bg-amber-40" : "bg-indigo-990"} `}>
       <header className={`${changeTheme ? "bg-amber-20" : "bg-indigo-990"} `}>
-        <div className="flex justify-center w-full h-14 items-center">
-          <div className="flex flex-row gap-10 items-center w-1/4 h-14">
+        <div
+          className={`${
+            changeTheme ? "bg-amber-20" : "bg-indigo-990"
+          } flex justify-center w-full h-14 items-center fixed z-10 opacity-80`}
+        >
+          <div className="flex flex-row gap-12 items-center w-1/4 h-14">
             <div
               className={`${
                 changeTheme ? "text-black" : "text-white"
@@ -67,7 +59,7 @@ function Header({ changeTheme, setChangeTheme }) {
             </div>
           </div>
 
-          <div className="relative w-10 h-10 ml-72">
+          <div className="relative w-10 h-10 ml-48">
             <div
               className={`${
                 changeTheme ? "-translate-y-20" : "translate-y-0"
@@ -93,35 +85,6 @@ function Header({ changeTheme, setChangeTheme }) {
           </div>
         </div>
       </header>
-      <body className="flex w-full h-screen flex-col items-center">
-        <div className="h-4/6 w-1/2">
-          <Canvas>
-            <ambientLight />
-            <pointLight position={[10, 10, 10]} />
-            <OrbitControls />
-            <Scene />
-          </Canvas>
-        </div>
-        <div
-          className={`${
-            changeTheme ? "bg-amber-40" : "bg-[#313134]"
-          } flex justify-center w-1/3 h-14 bg-amber-20 rounded-md`}
-        >
-          <p
-            className={`${
-              changeTheme ? "text-black" : "text-white"
-            } pt-4 font-roboto font-thin`}
-          >
-            Hello, Im a junior developer based in Mongolia
-          </p>
-        </div>
-        <div className="flex w-1/3 h-28 mt-6">
-          <div>
-            <p>Lkhagvadorj Batbaatar</p>
-            <p></p>
-          </div>
-        </div>
-      </body>
     </div>
   );
 }

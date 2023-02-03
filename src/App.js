@@ -1,6 +1,7 @@
 import "./index.css";
 import React from "react";
 import Header from "./components/header";
+import Body from "./components/body";
 import { useState } from "react";
 function App() {
   const [changeTheme, setChangeTheme] = useState(true);
@@ -12,6 +13,7 @@ function App() {
     >
       <div>
         <Header changeTheme={changeTheme} setChangeTheme={setChangeTheme} />
+        <Body changeTheme={changeTheme} setChangeTheme={setChangeTheme} />
       </div>
     </div>
   );
