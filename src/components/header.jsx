@@ -59,7 +59,7 @@ function Header({ changeTheme, setChangeTheme }) {
             </div>
           </div>
 
-          <div className="relative w-10 h-10 ml-48">
+          <div className="relative w-10 h-10 ml-96">
             <div
               className={`${
                 changeTheme ? "-translate-y-20" : "translate-y-0"
