@@ -14,12 +14,12 @@ function Scene() {
 function Body() {
   return (
     <div>
-      <body className="flex w-full h-96 flex-col items-center">
-        <div className="h-96 w-2/5">
-          <Canvas>
+      <body className="flex h-96 flex-col items-center">
+        <div className="h-96 w-3/4">
+          <Canvas camera={{ fov: 55, position: [0, 0, 10] }}>
             <ambientLight />
             <pointLight position={[20, 20, 20]} />
-            <OrbitControls />
+            <OrbitControls autoRotate autoRotateSpeed={10} />
             <Scene />
           </Canvas>
         </div>

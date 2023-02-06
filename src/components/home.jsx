@@ -6,12 +6,12 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 function Home({ changeTheme, setChangeTheme }) {
   return (
-    <div>
+    <div className="w-full">
       <div className="flex justify-center">
         <div
           className={`${
-            changeTheme ? "bg-amber-40" : "bg-[#525252]"
-          } flex justify-center items-center bg-amber-20 w-1/3 h-14 rounded-lg  `}
+            changeTheme ? "bg-amber-40" : "bg-[#525253]"
+          } flex justify-center  items-center bg-amber-20 w-96 h-14 rounded-lg -mt-10  opacity-80 md:w-[570px]`}
         >
           <p
             className={`${
@@ -22,15 +22,21 @@ function Home({ changeTheme, setChangeTheme }) {
           </p>
         </div>
       </div>
-      <div className="flex flex-row gap-28 justify-center mt-10">
+      <div className="flex flex-row gap-28 justify-center mt-10 sm:w-full ">
         <div className={`${changeTheme ? "text-blak" : "text-white"}`}>
-          <p className="font-mono text-3xl font-bold">Lkhagvadorj Batbaatar</p>
+          <p className="font-mono font-bold sm:text-3xl text-2xl">
+            Lkhagvadorj Batbaatar
+          </p>
           <p className="font-roboto font-thin text-l">
             Junior Developer ( Pro athlete / Artist )
           </p>
         </div>
-        <div>
-          <img src={Bataa} alt="" className="w-24 h-24 rounded-full border-2" />
+        <div className="">
+          <img
+            src={Bataa}
+            alt=""
+            className="rounded-full border-2 w-[100px] h-[100px] "
+          />
         </div>
       </div>
       <div className="flex justify-center">
@@ -58,13 +64,13 @@ function Home({ changeTheme, setChangeTheme }) {
             online, he loves hanging out with his camera. Currently, he is
             living off of his own product called{" "}
             <a
-              href=""
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               target="_blank"
               className={`${
                 changeTheme ? "text-blue-150" : "text-pink-990"
               } text-blue-150 font-semibold hover:underline underline-offset-4`}
             >
-              Inkdrop
+              MyProject
             </a>
             . He publishes content for marketing his products and his YouTube
             channel called "
@@ -137,16 +143,16 @@ function Home({ changeTheme, setChangeTheme }) {
           </div>
           <div className="flex flex-row gap-5">
             <p className="font-roboto text-l font-bold">Present</p>
-            <p className="font-roboto text-l font-thin">Writing history ...</p>
+            <p className="font-roboto text-l font-thin">To be continued...</p>
           </div>
         </div>
       </div>
       <div
         className={`${
           changeTheme ? "text-black" : "text-white"
-        } flex justify-center pt-8 ml-4`}
+        } flex justify-center pt-8 pl-8`}
       >
-        <div className="flex-col">
+        <div className="flex-col justify-center">
           <p
             className={`${
               changeTheme ? "text-black" : "text-white"
@@ -155,7 +161,7 @@ function Home({ changeTheme, setChangeTheme }) {
             I ♥
           </p>
           <div className="w-10 h-1 bg-[#525252]"></div>
-          <div className="flex flex-row pt-2 pl-5">
+          <div className="flex flex-row pt-2">
             <p className="font-roboto text-l font-thin">
               Art , Music , Drawing , Playing (Basketball / Hockey),
               Snowboarding , Machine Learning
@@ -168,7 +174,7 @@ function Home({ changeTheme, setChangeTheme }) {
           changeTheme ? "text-black" : "text-white"
         } flex pt-8 ml-9`}
       >
-        <div className="flex-col pl-96 ">
+        <div className="flex-col  ">
           <p
             className={`${
               changeTheme ? "text-black" : "text-white"
@@ -181,7 +187,7 @@ function Home({ changeTheme, setChangeTheme }) {
             <div
               className={`${
                 changeTheme ? "text-black" : "text-pink-990"
-              } text-black font-semibold hover:underline underline-offset-4 flex pt-2 pl-5 items-center gap-2`}
+              } text-black font-semibold hover:underline underline-offset-4 flex pt-2 items-center gap-2`}
             >
               <AiFillGithub />
               <a
@@ -195,7 +201,7 @@ function Home({ changeTheme, setChangeTheme }) {
             <div
               className={`${
                 changeTheme ? "text-black" : "text-pink-990"
-              } text-black font-semibold hover:underline underline-offset-4 flex pt-2 pl-5 items-center gap-2`}
+              } text-black font-semibold hover:underline underline-offset-4 flex pt-2 items-center gap-2`}
             >
               <AiOutlineTwitter />
               <a
@@ -209,7 +215,7 @@ function Home({ changeTheme, setChangeTheme }) {
             <div
               className={`${
                 changeTheme ? "text-black" : "text-pink-990"
-              } text-black font-semibold hover:underline underline-offset-4 flex pt-2 pl-5 items-center gap-2`}
+              } text-black font-semibold hover:underline underline-offset-4 flex pt-2 items-center gap-2`}
             >
               <AiOutlineTwitter />
               <a
@@ -223,7 +229,7 @@ function Home({ changeTheme, setChangeTheme }) {
             <div
               className={`${
                 changeTheme ? "text-black" : "text-pink-990"
-              } text-black font-semibold hover:underline underline-offset-4 flex pt-2 pl-5 items-center gap-2`}
+              } text-black font-semibold hover:underline underline-offset-4 flex pt-2 items-center gap-2`}
             >
               <BsInstagram />
               <a
