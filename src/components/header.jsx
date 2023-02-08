@@ -8,16 +8,16 @@ function Header({ changeTheme, setChangeTheme }) {
   const [swith, setSwitch] = useState(false);
   return (
     <header
-      className={`${
-        changeTheme ? "bg-amber-40" : "bg-indigo-990"
-      } w-full flex justify-center`}
+      className={`w-full flex justify-center h-14 top-0 fixed z-10 `}
+      style={{
+        backgroundColor: changeTheme
+          ? "rgba(240,230,219, 0.25)"
+          : "rgba(32, 32, 35, 0.25)",
+        backdropFilter: "blur(10px)",
+      }}
     >
-      <div
-        className={`${
-          changeTheme ? "bg-amber-40" : "bg-indigo-990"
-        } flex h-14 items-center fixed z-10 opacity-80`}
-      >
-        <div className="flex flex-row gap-12 items-center w-96 h-14 sm:w-40 w-20">
+      <div className={`flex h-14 items-center`}>
+        <div className="flex flex-row  items-center h-14 ">
           <div
             className={`${
               changeTheme ? "text-black" : "text-white"
@@ -62,7 +62,7 @@ function Header({ changeTheme, setChangeTheme }) {
           </div>
         </div>
         <div className="flex flex-row gap-1">
-          <div className="relative w-10 h-10 ml-96 ">
+          <div className="relative w-10 h-10 ">
             <div
               className={`${
                 changeTheme ? "-translate-y-20" : "translate-y-0"
