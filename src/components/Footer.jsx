@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="w-full flex justify-center">
-      © 2023 Takuya Matsuyama. All Rights Reserved.
+    <div className="w-full flex justify-center pt-16 text-gray-500 font-mono">
+      © 2023 cokeyyy / Rights Reserved.
     </div>
   );
 }

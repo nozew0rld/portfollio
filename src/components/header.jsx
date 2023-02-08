@@ -8,16 +8,20 @@ function Header({ changeTheme, setChangeTheme }) {
   const [swith, setSwitch] = useState(false);
   return (
     <header
-      className={`w-full flex justify-center h-14 top-0 fixed z-10 `}
-      style={{
-        backgroundColor: changeTheme
-          ? "rgba(240,230,219, 0.25)"
-          : "rgba(32, 32, 35, 0.25)",
-        backdropFilter: "blur(10px)",
-      }}
+      className={`${
+        changeTheme ? "bg-amber-20" : "bg-indigo-990"
+      } w-full flex justify-center h-14  fixed z-10 `}
+      // style={{
+      //   backgroundColor: changeTheme
+      //     ? "amber(240,230,219, 0.25)"
+      //     : "rgba(32, 32, 35, 0.25)",
+      //   backdropFilter: "blur(5px)",
+      // }}
     >
-      <div className={`flex h-14 items-center`}>
-        <div className="flex flex-row  items-center h-14 ">
+      <div
+        className={`flex h-14 items-center w-full md:[768px] justify-around py-3`}
+      >
+        <div className="flex items-center gap-8 ">
           <div
             className={`${
               changeTheme ? "text-black" : "text-white"
@@ -25,7 +29,7 @@ function Header({ changeTheme, setChangeTheme }) {
           >
             <IoIosPaw className="-rotate-12 group-hover:rotate-2 w-5 h-5" />
             <p className="items-center text-sm w-40 font-semibold font-mono">
-              Takuya Matsuyama
+              Logo kshoohguyu
             </p>
           </div>
 

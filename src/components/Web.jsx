@@ -26,11 +26,11 @@ function Web({ changeTheme }) {
             >
               <AiFillGithub />
               <a
-                href=""
+                href="https://github.com/nozew0rld"
                 target="_blank"
                 className="font-roboto text-l font-thin "
               >
-                @craftzdog
+                @nozew0rld
               </a>
             </div>
             <div
@@ -68,11 +68,11 @@ function Web({ changeTheme }) {
             >
               <BsInstagram />
               <a
-                href=""
+                href="https://www.instagram.com/cokeyyy_/?next=%2F"
                 target="_blank"
                 className="font-roboto text-l font-thin"
               >
-                @craftzdog
+                @cokeyyy_
               </a>
             </div>
           </div>

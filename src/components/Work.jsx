@@ -11,36 +11,36 @@ function Work({ changeTheme }) {
       <div className="w-full flex justify-center">
         <div
           className={`${
-            changeTheme ? "bg-amber-40" : "bg-[#525252]"
-          } flex justify-center  items-center bg-amber-20 h-14 rounded-lg  mt-10 opacity-80 md:w-[570px]`}
+            changeTheme ? "bg-amber-40" : "bg-[#525253]"
+          } flex justify-center items-center bg-amber-20 h-14 rounded-lg  mt-10 opacity-80 md:w-[570px] `}
         >
           <p
             className={`${
               changeTheme ? "text-black" : "text-white"
-            } font-roboto font-thin `}
+            } font-roboto font-thin  w-56 sm:w-96`}
           >
-            Hello Im a junior developer based in Mongolia !!!
+            Hello , Im a junior developer based in Mongolia !!!
           </p>
         </div>
       </div>
       <div className="flex flex-row gap-28 justify-center mt-10 sm:w-full ">
         <div className={`${changeTheme ? "text-blak" : "text-white"}`}>
-          <p className="font-mono font-bold sm:text-3xl text-2xl">
+          <p className="font-mono font-bold sm:text-2xl text-2xl ">
             Lkhagvadorj Batbaatar
           </p>
           <p className="font-roboto font-thin text-l">
             Junior Developer ( Pro athlete / Artist )
           </p>
         </div>
-        <div className="">
+        <div className="w-full md:w-auto flex justify-cente">
           <img
             src={Bataa}
             alt=""
-            className="rounded-full border-2 w-[100px] h-[100px] "
+            className="rounded-full border-2 sm:w-[100px] sm:h-[100px] w-[70px] h-[70px]"
           />
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center pt-10">
         <div className="flex-col">
           <p
             className={`${
@@ -55,33 +55,33 @@ function Work({ changeTheme }) {
               changeTheme ? "text-black" : "text-white"
             } font-roboto font-thin text-l pt-4`}
           >
-            Takuya is a freelance and a full-stack developer based in Osaka with
-            a passion for building digital services/stuff he wants. He has a
-            knack for all things launching products, from planning and designing
-            all the way to solving real-life problems with code. When not
-            online, he loves hanging out with his camera. Currently, he is
-            living off of his own product called{" "}
+            Im am freelance and a full-stack developer based in Ulaanbaatar with
+            a passion for building digital services/stuff I want. I have a knack
+            for all things launching products, from planning and designing all
+            the way to solving real-life problems with code. When not online, I
+            love hanging out with my friends. Currently, I am living off of my
+            own product called{" "}
             <a
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               target="_blank"
               className={`${
                 changeTheme ? "text-blue-150" : "text-pink-990"
-              } text-blue-150 font-semibold hover:underline underline-offset-4`}
+              } text-black font-semibold hover:underline underline-offset-4`}
             >
-              MyProject
+              nozeProject
             </a>
-            . He publishes content for marketing his products and his YouTube
-            channel called "
+            . I publish content for marketing my products and my YouTube channel
+            called "
             <a
-              href="https://www.youtube.com/@devaslife"
+              href="https://www.youtube.com/channel/UCgMKw67gervEavGP9zLh9rg"
               target="_blank"
               className={`${
                 changeTheme ? "text-blue-150" : "text-pink-990"
-              } text-blue-150 font-semibold hover:underline underline-offset-4`}
+              } text-black font-semibold hover:underline underline-offset-4 items-center `}
             >
-              Dev as Life
+              Obito
             </a>
-            " has more than 100k subscribers.
+            " has more than -1M subscribers.
           </p>
         </div>
       </div>

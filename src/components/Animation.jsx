@@ -11,7 +11,7 @@ function Animation() {
           <ambientLight />
           <Environment preset="sunset" background />
           <pointLight position={[10, 10, 10]} />
-          <OrbitControls autoRotate autoRotateSpeed={4} />
+          <OrbitControls autoRotate autoRotateSpeed={2} />
           <Suspense fallback={null}>
             <Model position={[0, 0, 0]} />
           </Suspense>
